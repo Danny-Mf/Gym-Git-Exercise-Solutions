@@ -276,3 +276,74 @@ USER@Murengez MINGW64 ~/Desktop/Bundle1 (dev)
 $
 
 ```
+## Bundle #2
+### Exercise #1
+```bash 
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (dev)
+$ git branch ft/bundle-2
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (dev)
+$ git checkout ft/bundle-2
+Switched to branch 'ft/bundle-2'
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/bundle-2)
+$ touch service.html
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/bundle-2)
+$ git add service.html
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/bundle-2)
+$ ls
+about.html  home.html  README.md  service.html  team.html
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/bundle-2)
+$ git commit -m"added service page"
+[ft/bundle-2 97e71e7] added service page
+ 1 file changed, 16 insertions(+)
+ create mode 100644 service.html
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/bundle-2)
+$ git branch
+  dev
+* ft/bundle-2
+  main
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/bundle-2)
+$ git status
+On branch ft/bundle-2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        team.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/bundle-2)
+$ git push --set-upstream ft/bundle-2
+fatal: 'ft/bundle-2' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/bundle-2)
+$ git push --set-upstream origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 450 bytes | 450.00 KiB/s, done.   
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)  
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/Danny-Mf/Bundle1/pull/new/ft/bundle-2
+remote:
+To https://github.com/Danny-Mf/Bundle1.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/bundle-2)
+$ 1
+
+```
