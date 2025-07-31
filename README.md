@@ -660,3 +660,11 @@ To https://github.com/Danny-Mf/Bundle1.git
   142  git commit -m "footer changes  squashing"
   143  git push --set-upstream origin ft/squash
    ```
+
+   # Bundle #5 
+   ## Exercise #1 and #2
+   ```bash
+   git add index.html
+   52  git commit -m "changed the main title"
+   53  git push
+   ```
