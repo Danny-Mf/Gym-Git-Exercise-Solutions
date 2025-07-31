@@ -586,3 +586,44 @@ To https://github.com/Danny-Mf/Bundle1.git
    65  git push --set-upstream origin ft/home-page-redesign
 
    ```
+   # Bundle #4
+   ## Exercise #1
+   ```bash
+    git checkout main
+   76  git add remote git-copy https://github.com/Danny-Mf/bundle4-Repo.git
+   77  git remote add git-copy https://github.com/Danny-Mf/bundle4-Repo.git
+   78  git add .
+   79  git commit -m "added p to the home page"
+   80  git push
+   81  git reset HEAD~
+   82  git status
+   83  git add .
+   84  git commit -m "added p to the home page"
+   85  git push origin git-copy
+   86  git remote -v
+   87  git remote
+   88  git push origin
+   89  git push
+   90  git pull
+   91  git push origin
+   92  git push git-copy
+   93  git pull
+   94  git remote
+   95  git push git-copy
+   96  git pull
+   97  git push
+   98  git push git-copy
+   99  git reset HEAD~
+  100  git status
+  101  git push
+  102  git pull
+  103  git push git copy
+  104  git push git-copy
+  105  git pull
+  106  git add
+  107  git add --all
+  108  git commit -m "added p to the home page"
+  109  git push origin
+  110  git push git-copy
+  112  git push git-copy main --force
+   ```
