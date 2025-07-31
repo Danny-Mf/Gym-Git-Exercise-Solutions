@@ -347,3 +347,186 @@ USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/bundle-2)
 $ 1
 
 ```
+## Exercise #2\
+```bash
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/bundle-2)
+$ git checkout main
+M       service.html
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (main)
+$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 914 bytes | 130.00 KiB/s, done.
+From https://github.com/Danny-Mf/Bundle1
+   95ebb44..2ef7a9d  main       -> origin/main
+Updating 97e71e7..2ef7a9d
+Fast-forward
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (main)
+$ git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/service-redesign)  
+$ git add .
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/service-redesign)  
+$ git commit -m "added new changes to the service page"
+[ft/service-redesign 5acae51] added new changes to the service page
+ 2 files changed, 13 insertions(+), 2 deletions(-)
+ create mode 100644 team.html
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/service-redesign)  
+$ git push
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/service-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/service-redesign)
+$
+GNU bash, version 5.2.37(1)-release (x86_64-pc-msys)
+$ git push --set-upstream origin ft/service-redesign
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 542 bytes | 542.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/Danny-Mf/Bundle1/pull/new/ft/service-redesign
+remote:
+To https://github.com/Danny-Mf/Bundle1.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/service-redesign)  
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (main)
+$ git add .
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (main)
+$ git push
+Everything up-to-date
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (main)
+$ git push origin main
+Everything up-to-date
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (main)
+$ git commit -m "added services"
+[main 6cffceb] added services
+ 1 file changed, 6 insertions(+)
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (main)
+$ git add .
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (main)
+$ git commit -m "changed the title"
+[main 63d4088] changed the title
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (main)
+$ git push 
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 748 bytes | 748.00 KiB/s, done.   
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)  
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/Danny-Mf/Bundle1.git
+   2ef7a9d..63d4088  main -> main
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (main)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.   
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/service-redesign)  
+$ git diff ft/service-redesign main
+diff --git a/service.html b/service.html
+index 0252777..bd8ac2b 100644
+--- a/service.html
++++ b/service.html
+@@ -4,12 +4,18 @@
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=], initial-scale=1.0">
+-    <title>ft | Service page</title>
++    <title>service</title>
+ </head>
+
+ <body>
+     <div>
+-        <p>Services</p>
++        <p>ServicesS</p>
++        <ul>
++            <li>Web design</li>
++            <li>CCTV Camera installation</li>
++            <li>Arduino Programming</li>
++            <li>Mutugane pp</li>
++        </ul>
+     </div>
+ </body>
+
+diff --git a/team.html b/team.html
+deleted file mode 100644
+index 7488b49..0000000
+--- a/team.html
++++ /dev/null
+
+
+CONFLICT (content): Merge conflict in service.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/service-redesign|MERGING)
+$ git add .
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/service-redesign|MERGING)
+$ git commit -m "ft/service-redesign and main are now merged\"
+> 
+> 
+> git commit -m "ft/service-redesign and main are now merged\"
+
+fatal: cannot do a partial commit during a merge.
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/service-redesign|MERGING)
+$ git add .
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/service-redesign|MERGING)
+$ git status
+On branch ft/service-redesign
+Your branch is up to date with 'origin/ft/service-redesign'.
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/service-redesign|MERGING)
+$ git commit
+[ft/service-redesign 1bdb089] Merge branch 'main' into ft/service-redesign
+
+USER@Murengez MINGW64 ~/Desktop/Bundle1 (ft/service-redesign)
+$ git push
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 241 bytes | 241.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Danny-Mf/Bundle1.git
+   5acae51..1bdb089  ft/service-redesign -> ft/service-redesign
+
+```
