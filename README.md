@@ -530,3 +530,39 @@ To https://github.com/Danny-Mf/Bundle1.git
    5acae51..1bdb089  ft/service-redesign -> ft/service-redesign
 
 ```
+# Bundle #3
+## Exercise #1
+```bash
+62  git branch ft/team-page
+   63  git checkout ft/team-page
+   64  touch team.html
+   65  git add --all
+   66  git commit -m "added team page"
+   67  git push --upstream-origin ft/team-page       
+   68  git push
+   69  git push --set-upstream origin ft/team-page   
+   70  git checkout main
+   71  git branch ft/contact-page
+   72  git checkout ft/team-page
+   73  git log
+   74  git checkout ft/contact-page
+   75  git cherry-pick 957f992a5cefbaa698fb4c2e599da4bc3c0b3fc2
+   76  touch contact.html
+   77  git add .
+   78  git commit -m "added contact page"
+   79  git push --set-upstream origin ft/contact-page
+   80  git branch checkout -b ft/faq-page
+   81  git branch checkout -b "ft/faq-page"
+   82  git checkout -b "ft/faq-page"
+   83  touch faq.html
+   84  git add .
+   85  git commmit -m "added faq page"
+   86  git commit -m "added faq page"
+   87  git push --set-upstream origin ft/faq-page    
+   88  git revert 957f992a5cefbaa698fb4c2e599da4bc3c0b3fc2
+   89  git log
+   90  git push --set-uptream origin ft/faq-page     
+   91  git push --set-upstream origin ft/faq-page    
+  
+
+   ```
