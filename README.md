@@ -627,3 +627,36 @@ To https://github.com/Danny-Mf/Bundle1.git
   110  git push git-copy
   112  git push git-copy main --force
    ```
+
+   ## Exercise 2
+   ```bash
+    git checkout -b ft/footer
+  116  touch footer.html
+  117  git add .
+  118  git commit -m "added footer page"
+  119  git add .
+  120  git commit -m "added social media Icon"
+  121  git push --set-upstream ft/footer
+  122  git push
+  123  git push --set-upstream origin ft/footer
+  124  git checkout main
+  125  git checkout  ft/footer
+  126  git reset HEAD~
+  127  git add .
+  128  git commit -m "added social media Icon"
+  129  git push --set-upstream origin ft/footer
+  130  git pull
+  131  git push --set-upstream origin ft/footer
+  132  git add .
+  133  git commit -m "added social media list"
+  134  git push --set-upstream origin ft/footer
+  135  git checkout main
+  136  git branch ft/squashing
+  137  git merge squash ft/footer
+  138  git checkout -b ft/squash
+  139  git merge squash ft/footer
+  140  git merge --squash ft/footer
+  141  git add .
+  142  git commit -m "footer changes  squashing"
+  143  git push --set-upstream origin ft/squash
+   ```
