@@ -566,3 +566,23 @@ To https://github.com/Danny-Mf/Bundle1.git
   
 
    ```
+   ## Exercise #2
+   ```bash 
+
+51  git checkout ft/faq-page
+   52  git branch ft/home-page-redesign
+   53  git checkout main
+   54  touch service.html
+   55  git add .
+   56  git commit origin main
+   57  git commit -m"added service page"
+   58  git push origin main
+   59  git pull
+   60  git push
+   61  git checkout ft/home-page-redesign
+   62  git rebase main
+   63  git add .
+   64  git commit -m"added title to the home page"   
+   65  git push --set-upstream origin ft/home-page-redesign
+
+   ```
