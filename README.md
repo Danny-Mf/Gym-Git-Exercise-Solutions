@@ -668,3 +668,21 @@ To https://github.com/Danny-Mf/Bundle1.git
    52  git commit -m "changed the main title"
    53  git push
    ```
+   ## Bundle 6
+   ```bash
+   51  git status
+   52  git checkout -b feature
+   53  touch menu.html
+   54  git add menu.html
+   55  git commit -m "Added menu page"
+   56  git push --set-upstream origin feature
+   57  git checkout -b bug fix
+   58  git checkout -b "bug-fix"
+   59  git add index-4.html
+   60  git status
+   61  git commit -m "index-4.html | Changed title for Menu to Contacts"
+   62  git push --set-upstream origin bug-fix
+   63  git add index-4.html
+   64  git commit -m "index-4.html | Changed Contact to +1 800 659 6035"
+   65  git push --set-upstream origin bug-fix
+   ```
